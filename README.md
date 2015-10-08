@@ -29,6 +29,8 @@ Create a transform stream that accepts AudioBuffer objects written in and output
 
 ### `stream.pipe(destination, opts)`
 
+### `stream.setSilenceDuration(seconds)`
+
 ### `stream.end()`
 
 ## License

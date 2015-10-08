@@ -24,6 +24,10 @@ function AudioBufferStream (opt) {
 
   var onDone = null
 
+  stream.setSilenceDuration = function (value) {
+    opt.silenceDuration = value
+  }
+
   stream._write = function (audioBuffer, enc, done) {
     onDone = done
     var slices = audioBuffer.length / opt.chunkLength
